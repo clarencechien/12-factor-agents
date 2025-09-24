@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-Factor Agents - Bilingual Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>12-Factor Agents - Bilingual Viewer</h1>
+        <p>中英對照閱讀器</p>
+    </header>
+
+    <div class="main-container">
+        <nav id="navigation">
+            <h2>Chapters</h2>
+            <ul id="nav-links">
+                <!-- Links will be dynamically inserted here by app.js -->
+            </ul>
+        </nav>
+
+        <main class="content-area">
+            <div class="content-pane" id="content-en">
+                <!-- English content will be loaded here -->
+            </div>
+            <div class="content-pane" id="content-zh">
+                <!-- Chinese content will be loaded here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- CDN for marked.js to parse Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Our custom script -->
+    <script src="app.js"></script>
+</body>
+</html>

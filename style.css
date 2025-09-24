@@ -1,0 +1,106 @@
+/* Basic Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* Layout */
+.main-container {
+    display: flex;
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#navigation {
+    flex: 0 0 250px; /* Do not grow, do not shrink, base width 250px */
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.content-area {
+    display: flex;
+    flex: 1; /* Grow to fill available space */
+    min-width: 0; /* Important for flexbox to shrink content */
+}
+
+.content-pane {
+    flex: 1;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+#content-en {
+    border-right: 1px solid #eee;
+}
+
+/* Navigation Links */
+#nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links li a {
+    display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #337ab7;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#nav-links li a:hover,
+#nav-links li a.active {
+    background-color: #e7f3ff;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+/* Content Typography */
+.content-pane h1, .content-pane h2, .content-pane h3 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+.content-pane code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.content-pane pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.content-pane pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+.content-pane img {
+    max-width: 100%;
+    height: auto;
+}
