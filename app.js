@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const GITHUB_OWNER = 'humanlayer';
-    const GITHUB_REPO = '12-factor-agents';
-    const GITHUB_BRANCH = 'feat/add-beginner-friendly-chinese-guide'; // Or the default branch name
+    // --- Dynamic GitHub Info ---
+    // This makes the viewer work on any fork of the repository.
+    const isGhPages = window.location.hostname.endsWith('.github.io');
+    const pathSegments = window.location.pathname.split('/').filter(Boolean);
+
+    const GITHUB_OWNER = isGhPages ? window.location.hostname.split('.')[0] : 'humanlayer';
+    const GITHUB_REPO = isGhPages ? pathSegments[0] : '12-factor-agents';
+    const GITHUB_BRANCH = 'feat/add-beginner-friendly-chinese-guide'; // This still needs to point to the content branch
 
     const navLinksContainer = document.getElementById('nav-links');
     const contentEn = document.getElementById('content-en');
