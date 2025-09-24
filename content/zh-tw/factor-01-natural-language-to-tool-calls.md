@@ -52,7 +52,7 @@ def execute_tool(tool_name, parameters):
 
 理論說完了，讓我們來點實際的！這裡我們將展示如何透過 API 和 CLI，讓 Claude 和 Gemini 為我們進行工具呼叫。
 
-#### 範例 1：使用 Claude 3.5 Sonnet API
+#### 範例 1：使用 Claude Sonnet API
 
 Anthropic 的 Claude 模型提供了強大的工具使用 (Tool Use) 功能。我們只需要在 API 請求中定義好我們的工具，Claude 就會聰明地在需要時呼叫它們。
 
@@ -67,7 +67,7 @@ curl https://api.anthropic.com/v1/messages \
      --header "content-type: application/json" \
      --data \
 '{
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-sonnet-4@20250514",
     "max_tokens": 1024,
     "messages": [
         {"role": "user", "content": "台北現在天氣怎麼樣？"}
@@ -100,7 +100,7 @@ Claude 不會直接回答天氣，而是會回傳一個 `tool_use` 的內容區�
   "id": "msg_... ",
   "type": "message",
   "role": "assistant",
-  "model": "claude-3-5-sonnet-20240620",
+  "model": "claude-sonnet-4@20250514",
   "content": [
     {
       "type": "tool_use",
@@ -125,7 +125,9 @@ Claude 不會直接回答天氣，而是會回傳一個 `tool_use` 的內容區�
 
 **我們的任務**：一樣是定義 `get_weather` 工具，並問 Gemini「台北現在天氣怎麼樣？」。
 
-首先，請確認你已經安裝並登入 `gcloud` CLI。
+首先，請確認你已經安裝 `gcloud` CLI，並透過在終端機執行 `gcloud auth login` 來登入你的 Google 帳號。`gcloud` 會引導你透過瀏覽器完成登入。
+
+`$(gcloud auth print-access-token)` 這個指令之所以能運作，就是因為你已經登入。它會動態地產生一個有時效性的驗證權杖，讓你的 API 請求合法。
 
 接著，執行以下這段 `bash` 指令。它會自動幫你填上需要的變數：
 
@@ -133,7 +135,7 @@ Claude 不會直接回答天氣，而是會回傳一個 `tool_use` 的內容區�
 # 替換成你的 GCP 專案 ID 和要在哪個區域執行
 PROJECT_ID="your-gcp-project-id"
 LOCATION="us-central1"
-MODEL_ID="gemini-1.5-flash-001"
+MODEL_ID="gemini-2.5-pro"
 
 curl -X POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \

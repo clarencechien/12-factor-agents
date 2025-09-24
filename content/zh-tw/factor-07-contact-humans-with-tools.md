@@ -110,7 +110,7 @@ curl https://api.anthropic.com/v1/messages \
      --header "content-type: application/json" \
      --data \
 '{
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-sonnet-4@20250514",
     "system": "你是一個自動化部署機器人。你的任務是安全地執行部署。規則：部署到 'staging' 環境可以直接執行。**部署到 'production' 環境前，必須、絕對要先呼叫 `request_human_approval` 工具來取得人類同意。**",
     "messages": [
         {"role": "user", "content": "幫我把 v1.2.3 版部署到 production"}

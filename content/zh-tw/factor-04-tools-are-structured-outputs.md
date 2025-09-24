@@ -49,7 +49,7 @@ curl https://api.anthropic.com/v1/messages \
      --header "content-type: application/json" \
      --data \
 '{
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-sonnet-4@20250514",
     "max_tokens": 1024,
     "messages": [
         {"role": "user", "content": "台積電現在的股價是多少？"}
@@ -110,7 +110,7 @@ Claude 會忽略無關的 `get_weather` 工具，並正確地選擇 `get_stock_p
 ```bash
 PROJECT_ID="your-gcp-project-id"
 LOCATION="us-central1"
-MODEL_ID="gemini-1.5-flash-001"
+MODEL_ID="gemini-2.5-pro"
 
 curl -X POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \

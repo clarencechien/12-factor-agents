@@ -81,7 +81,7 @@ curl https://api.anthropic.com/v1/messages \
      --header "content-type: application/json" \
      --data \
 '{
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-sonnet-4@20250514",
     "max_tokens": 1024,
     "messages": [
         {"role": "user", "content": "我的名字是 Jules。"},
@@ -103,7 +103,7 @@ curl https://api.anthropic.com/v1/messages \
      --header "content-type: application/json" \
      --data \
 '{
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-sonnet-4@20250514",
     "max_tokens": 1024,
     "system": "你正在跟一位使用者對話，請根據以下的對話紀錄回答問題。",
     "messages": [
@@ -121,7 +121,7 @@ Gemini 的作法非常類似，`contents` 陣列就是用來存放多輪對話�
 ```bash
 PROJECT_ID="your-gcp-project-id"
 LOCATION="us-central1"
-MODEL_ID="gemini-1.5-flash-001"
+MODEL_ID="gemini-2.5-pro"
 
 curl -X POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
@@ -149,7 +149,7 @@ curl -X POST \
 ```bash
 PROJECT_ID="your-gcp-project-id"
 LOCATION="us-central1"
-MODEL_ID="gemini-1.5-flash-001"
+MODEL_ID="gemini-2.5-pro"
 
 curl -X POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \

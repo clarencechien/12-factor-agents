@@ -78,7 +78,7 @@ curl https://api.anthropic.com/v1/messages \
      --header "content-type: application/json" \
      --data \
 '{
-    "model": "claude-3-5-sonnet-20240620",
+    "model": "claude-sonnet-4@20250514",
     "max_tokens": 1024,
     "system": "你是一個專業的旅遊規劃師，名叫「Jules」。你的回覆必須使用台灣人習慣的正體中文，語氣要親切活潑。在回答問題前，要先跟使用者問好。",
     "messages": [
@@ -110,7 +110,7 @@ Claude 會遵循 `system` 的指示，先問好，並以親切的語氣開始對
 ```bash
 PROJECT_ID="your-gcp-project-id"
 LOCATION="us-central1"
-MODEL_ID="gemini-1.5-flash-001"
+MODEL_ID="gemini-2.5-pro"
 
 curl -X POST \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
