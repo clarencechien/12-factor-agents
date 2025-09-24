@@ -20,7 +20,7 @@
 
 **這跟我們的 Agent 架構，簡直一模一樣！**
 
-![1c5-agent-foldl](../../img/1c5-agent-foldl.png)
+![1c5-agent-foldl](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/1c5-agent-foldl.png)
 
 讓我們來對應一下：
 - **當前的狀態 (Accumulator)**：就是我們在 Factor 5 中定義的「**事件歷史紀錄 (Event History)**」。

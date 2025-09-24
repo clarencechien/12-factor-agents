@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const GITHUB_OWNER = 'humanlayer';
     const GITHUB_REPO = '12-factor-agents';
-    const GITHUB_BRANCH = 'main'; // Or the default branch name
+    const GITHUB_BRANCH = 'feat/add-beginner-friendly-chinese-guide'; // Or the default branch name
 
     const navLinksContainer = document.getElementById('nav-links');
     const contentEn = document.getElementById('content-en');

@@ -4,7 +4,7 @@
 
 **原則：所謂的「工具」，並不需要很複雜。它的核心，就只是讓 LLM 產生一段結構化的輸出 (例如 JSON)，你的程式碼再來決定如何處理它。**
 
-![140-tools-are-just-structured-outputs](../../img/140-tools-are-just-structured-outputs.png)
+![140-tools-are-just-structured-outputs](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/140-tools-are-just-structured-outputs.png)
 
 我們不必把「工具呼叫」(Tool Calling) 看得太神秘。它並不是 LLM 真的在「執行」什麼東西。它只是在「建議」你的程式去執行某個動作。
 
