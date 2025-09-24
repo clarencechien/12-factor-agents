@@ -4,7 +4,7 @@
 
 **原則：不要將你的提示工程 (prompt engineering) 外包給框架。**
 
-![120-own-your-prompts](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/120-own-your-prompts.png)
+![120-own-your-prompts](../../img/120-own-your-prompts.png)
 
 許多 Agent 框架為求方便，提供了「黑盒子」般的方法，讓你用簡單的參數來設定 Agent 的行為：
 

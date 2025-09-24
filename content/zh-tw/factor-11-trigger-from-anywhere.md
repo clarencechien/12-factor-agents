@@ -6,7 +6,7 @@
 
 一個真正強大的 Agent，應該要能融入我們現有的工作流程中。它應該像一個真正的數位同事，我們可以在 Slack 上 @ 它，可以寄 Email 給它，甚至可以讓它在每天早上九點自動開始工作。
 
-![1b0-trigger-from-anywhere](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/1b0-trigger-from-anywhere.png)
+![1b0-trigger-from-anywhere](../../img/1b0-trigger-from-anywhere.png)
 
 這就是「隨處觸發」的核心概念。你的 Agent 應該要有一個統一的、標準化的入口（也就是我們在 Factor 6 設計的 `/sessions` API），而你的應用程式則應該有多個「適配器」(Adapters)，負責將來自不同管道的事件，轉換成對這個標準入口的呼叫。
 

@@ -6,7 +6,7 @@
 
 這個原則，其實就是軟體工程界喊了多年的「微服務 (Microservices) vs. 單體式應用 (Monolith)」架構之爭，在 Agent 設計上的體現。
 
-![1a0-small-focused-agents](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/1a0-small-focused-agents.png)
+![1a0-small-focused-agents](../../img/1a0-small-focused-agents.png)
 
 為什麼這很重要？因為 LLM 的一大限制是：**情境視窗越長，模型就越容易迷失方向、忘記初衷**。一個需要上百個步驟才能完成的複雜任務，會產生一個極其冗長的對話歷史。在這種情況下，即使是今天最強大的模型，其表現也會急遽下降。
 

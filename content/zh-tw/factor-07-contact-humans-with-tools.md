@@ -6,7 +6,7 @@
 
 在大部分的 LLM API 中，模型在最後一步總是要做一個高風險的二選一：我是該回傳一段自然語言文字，還是該回傳一個結構化的工具呼叫 JSON？
 
-![170-contact-humans-with-tools](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/170-contact-humans-with-tools.png)
+![170-contact-humans-with-tools](../../img/170-contact-humans-with-tools.png)
 
 這個決策完全賭在模型輸出的第一個 token 上。但我們可以換個思路：**強制模型總是輸出 JSON**。如果它想跟使用者說話，就讓它呼叫一個名為 `ask_human` 或 `request_approval` 的工具。
 

@@ -4,7 +4,7 @@
 
 **原則：不要被「Agent 迴圈」給綁架了。你應該要能完全掌握 LLM 呼叫之後的程式碼流程。**
 
-![180-control-flow](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/180-control-flow.png)
+![180-control-flow](../../img/180-control-flow.png)
 
 一個最天真的 Agent 實作，可能長得像這樣：
 ```python

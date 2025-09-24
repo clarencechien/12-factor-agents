@@ -15,7 +15,7 @@
 - **相關的歷史對話** (也就是「記憶」)
 - **關於輸出格式的指示**
 
-![Context Engineering](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/220-context-engineering.png)
+![Context Engineering](../../img/220-context-engineering.png)
 
 ### 標準格式 vs. 自訂格式
 

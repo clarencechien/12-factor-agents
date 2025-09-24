@@ -4,7 +4,7 @@
 
 在建立 Agent 的過程中，最常見也最核心的模式之一，就是將人類的自然語言（我們說的話）轉換成結構化的「工具呼叫」(Tool Calls)。這是一個非常強大的模式，它讓 Agent 能夠理解我們的意圖，並將其轉化為具體的程式碼操作。
 
-![110-natural-language-tool-calls](https://raw.githubusercontent.com/humanlayer/12-factor-agents/feat/add-beginner-friendly-chinese-guide/img/110-natural-language-tool-calls.png)
+![110-natural-language-tool-calls](../../img/110-natural-language-tool-calls.png)
 
 簡單來說，這個模式就是將一句像這樣的日常對話：
 

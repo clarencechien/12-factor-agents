@@ -62,7 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            const markdown = await response.text();
+            let markdown = await response.text();
+
+            // Dynamically rewrite relative image paths to absolute URLs
+            const imageUrlBase = `https://raw.githubusercontent.com/${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}/`;
+            markdown = markdown.replace(/\(\.\.\/\.\.\/img\//g, `(${imageUrlBase}img/`);
+
             element.innerHTML = marked.parse(markdown);
         } catch (error) {
             element.innerHTML = `<p style="color: red;">Error loading content: ${error.message}</p>`;
